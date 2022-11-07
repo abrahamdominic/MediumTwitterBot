@@ -1,5 +1,3 @@
-from urllib.request import urlretrieve
-from urllib.parse import urlparse
 import requests
 
 URL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/the-gray-area"
@@ -17,8 +15,8 @@ def fetch_article(url):
             post_categories = post["categories"]
             return {"title": post_title, "thumbnail": post_image, "link": post_url, "categories": post_categories}
 
+# Parse latest post for Twitter
 def Title_Link_Post(url):
-
     post_dict = fetch_article(url)
     if(post_dict):
         catList = post_dict["categories"]
