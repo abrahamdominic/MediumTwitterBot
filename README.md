@@ -2,7 +2,7 @@
 ### Automates twitter feed on [@TGAonMedium](twitter.com/tgaonmedium)
 This bot posts a new article whenever [The Gray Area](medium.com/the-gray-area) is updated on Medium  
 
-Configure .env to look like this:  
+Configure .env to look like this and add these as config vars in heroku:  
 ```
 CONSUMER_KEY=XXXXXXXXXXXXXXXXXXXXXXXXX
 
